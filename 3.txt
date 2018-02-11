@@ -1,0 +1,21 @@
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Web (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Web (master)
+$ git add .
+warning: LF will be replaced by CRLF in 82YelpCampv2/app.js.
+The file will have its original line endings in your working directory.
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Web (master)
+$ git commit
+[master 553ad81] ADDING 83RESTful
+ 18 files changed, 354 insertions(+)
+ rename {82_YelpCampv2 => 82YelpCampv2}/app.js (100%)
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Web (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)

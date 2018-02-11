@@ -1,0 +1,20 @@
+git checkout -b TD2106-master master
+Switched to a new branch 'TD2106-master'
+
+git pull https://github.com/TD2106/WebProject.git master
+CONFLICT (add/add): Merge conflict in ERD.vsdx
+Automatic merge failed; fix conflicts and then commit the result.
+
+git mergetool
+
+git checkout master ERD.vsdx
+git checkout TD2106-master ERD.vsdx
+git add ERD.vsdx
+
+git commit -m"abc..."
+git push origin master
+
+git log --oneline
+/*Result: commit code: name commit*/
+git revert <commit code>
+git mergetool

@@ -1,0 +1,140 @@
+/*Show all commit history*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log
+commit fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+commit 303be8780a795952ea837795f9900e78dba8a707
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:27:07 2017 +0700
+
+    Git first
+
+commit ab3acaf944c2d7a60861669213b04c580bf8909f
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 05:32:22 2017 +0700
+
+    Initial commit
+//===========================================
+
+/*Show all commit history with abbreviation*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log --abbrev-commit
+commit fe2fbe0 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+commit 303be87
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:27:07 2017 +0700
+
+    Git first
+
+commit ab3acaf
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 05:32:22 2017 +0700
+
+    Initial commit
+
+//===========================================
+
+/*Show all history commit on oneline and graph*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log --oneline --graph --decorate
+* fe2fbe0 (HEAD -> master, origin/master, origin/HEAD) First Git
+* 303be87 Git first
+* ab3acaf Initial commit
+
+//===========================================
+
+/*Show log within given logcode*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log fe2fbe0...ab3acaf
+commit fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+commit 303be8780a795952ea837795f9900e78dba8a707
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:27:07 2017 +0700
+
+    Git first
+
+//===========================================
+
+/*Show all log 3 days ago*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log --since="3 days ago"
+commit fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+commit 303be8780a795952ea837795f9900e78dba8a707
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:27:07 2017 +0700
+
+    Git first
+
+commit ab3acaf944c2d7a60861669213b04c580bf8909f
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 05:32:22 2017 +0700
+
+    Initial commit
+
+//===========================================
+
+/*Show recent log in given file*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log -- 5.txt
+commit fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+//===========================================
+/*Show all log in given file*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git log --follow -- 5.txt
+commit fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+//===========================================
+
+/*Show all action with given log*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ git show fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9
+commit fe2fbe0750a7446967bc94b1d4c3dc70a4c7f0f9 (HEAD -> master, origin/master, origin/HEAD)
+Author: huongung155 <huongung155@gmail.com>
+Date:   Tue Nov 28 06:28:35 2017 +0700
+
+    First Git
+
+diff --git a/5.txt b/5.txt
+new file mode 100644
+index 0000000..4737e3d
+--- /dev/null
++++ b/5.txt
+@@ -0,0 +1,27 @@
++M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
++$ git add .
++
++M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
++$ git commit -m"Git first"
++[master 303be87] Git first
++ 4 files changed, 107 insertions(+)
++ create mode 100644 1.txt
++ create mode 100644 2.txt
++ create mode 100644 3.txt

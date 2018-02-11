@@ -1,0 +1,22 @@
+/*Rename in git as long as this file is in staging area*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$git mv 7.txt level.txt
+
+/*Move file as long as this file is in staging area*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$git mv level2.txt level3/
+
+/*Remove file as long as this file is in staging area*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$git rm level2.txt
+
+/*Reset the remove*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$git reset HEAD level2.txt
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$git status
+Changes not staged for commit:
+	deleted: level2.txt
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$git checkout -- hipster.txt

@@ -1,0 +1,17 @@
+M4800@DESKTOP-VTRPVEB MINGW64 /
+$ cat ~/.gitconfig
+[user]
+        email = huongung155@gmail.com
+        name = huongung155
+
+M4800@DESKTOP-VTRPVEB MINGW64 /
+$ git config --global core.editor "notepad++.exe -multiInst -nosession"
+
+M4800@DESKTOP-VTRPVEB MINGW64 /
+$ git config --global --list
+user.email=huongung155@gmail.com
+user.name=huongung155
+core.editor=notepad++.exe -multiInst -nosession
+
+M4800@DESKTOP-VTRPVEB MINGW64 /
+$ git config --global -e

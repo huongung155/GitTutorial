@@ -1,0 +1,54 @@
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed
+$ unzip 63ToDoList.zip
+Archive:  63ToDoList.zip
+   creating: 63ToDoList/
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed
+$ ls
+63ToDoList/  63ToDoList.zip
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed
+$ mv 63ToDoList WebProject
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed
+$ ls
+63ToDoList.zip  WebProject/
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed
+$ cd WebProject
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed/WebProject
+$ ls
+assets/  index.html
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed/WebProject
+$ git init
+Initialized empty Git repository in F:/Download/Compressed/WebProject/.git/
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed/WebProject (master)
+$ ls -al
+total 20
+drwxr-xr-x 1 M4800 197609   0 Nov 28 05:58 ./
+drwxr-xr-x 1 M4800 197609   0 Nov 28 05:57 ../
+drwxr-xr-x 1 M4800 197609   0 Nov 28 05:58 .git/
+drwxr-xr-x 1 M4800 197609   0 Nov 28 05:55 assets/
+-rw-r--r-- 1 M4800 197609 873 Oct 12 21:10 index.html
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed/WebProject (master)
+$ notepad++ index.html
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed/WebProject (master)
+$ Sublime Text 3 index.html
+bash: Sublime: command not found
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Download/Compressed/WebProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        assets/
+        index.html

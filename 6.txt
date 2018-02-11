@@ -1,0 +1,75 @@
+M4800@DESKTOP-VTRPVEB MINGW64 /f/GitTutorial (master)
+$ notepad++ ~/.gitconfig
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/IU/2017 Fall/Computer Network/NetworkLab (master)
+$ git commit -am "Lab06"
+
+/*All files git is tracking in repository, particularly in staging area*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/IU/2017 Fall/Computer Network/NetworkLab (master)
+$ git ls-files
+Lab 01/1.png
+Lab 01/LabComnet1_IT - WireShark (HTTP).docx
+Lab 02/LabComnet2_IT - WireShark (TCP).docx
+
+/==============================================/
+/*Revert the file which is in staging*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ notepad++ TestGit.txt
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TestGit.txt
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git add .
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   TestGit.txt
+
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git reset HEAD TestGit.txt
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        TestGit.txt
+/==============================================/
+
+/==============================================/
+/*Change the file and revert to the last commit*/
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   TestGit.txt
+
+M4800@DESKTOP-VTRPVEB MINGW64 /f/Machine Learning/CS-109 (master)
+$ git checkout -- TestGit.txt
+
+/==============================================/
+
