@@ -1,6 +1,6 @@
 - List all branches
 Image Tutorial:
-![alt text](http://res.cloudinary.com/dqagyeboj/image/upload/v1518312176/Opera_Snapshot_2018-02-11_041506_www.youtube.com_u3efdn.png)
+![alt text](https://9twp8g.ch.files.1drv.com/y4mEuyuFQY0-4rRmH1tGa8FlRv4raPBnDOTWxdZoJcPHdruC62tp_Q_LWhCKHg5ZyPwkK2ksjHw7xqmoIWrLyRFAdtG2hjVFMjLMF53xuSsbJD7GkcVdrnJf-aNkEEPq-akv8bHnpWQ365JKVhkamg6cIkLobRMlhURddgxOROQX64nfMu-HNhjBVmga5Pfpn02DHBBpVPpkQArulTUavxyeg/Opera_Snapshot_2018-02-11_061506_www.youtube_veipvt.png?psid=1)
 - Add a branch
 -1. `git checkout -b <branch name>`: to create new branch
 -2. `git branch`: to check created branch name
