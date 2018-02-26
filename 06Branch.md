@@ -24,9 +24,9 @@
        /   |
  0-----0---0---/---
  ```
-- Remove branch
-* Assume you are in `master` branch
-* To remove `feature1`, `git branch -d feature1`
+* Remove branch
+	* Assume you are in `master` branch
+	* To remove `feature1`, `git branch -d feature1`
 ```javascript
 0-----0---0---/---
 ```
