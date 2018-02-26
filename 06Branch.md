@@ -7,18 +7,18 @@
 * Change branches: Change the pointer from `feature1` to `master`
 	* `git checkout master`
 * ![alt text](http://res.cloudinary.com/dqagyeboj/image/upload/v1518312281/Opera_Snapshot_2018-02-11_061506_www.youtube_veipvt.png)
-- Merge branch
-* if Create file in branch `feature1`
-* This file only apprears when you checkout `feature1` branch
-* Generally, this is our branch look like:
+* Merge branch
+	* if Create file in branch `feature1`
+	* This file only apprears when you checkout `feature1` branch
+	* Generally, this is our branch look like:
 ```javascript
        /------0
       /
 0-----0---0
 ```
-* Assume, on `feature1`, you already done with form and want to merge with `master` branch
-* Assume, you are in `master` branch, `git merge feature1`
-* Now, GPU nano/vim, just `Control^X` to exit
+	* Assume, on `feature1`, you already done with form and want to merge with `master` branch
+	* Assume, you are in `master` branch, `git merge feature1`
+	* Now, GPU nano/vim, just `Control^X` to exit
 ```javascript
         /--0
        /   |
