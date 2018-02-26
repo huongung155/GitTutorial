@@ -17,8 +17,8 @@
 0-----0---0
 ```
 * Assume, on `feature1`, you already done with form and want to merge with `master` branch
-* Assume, you are in `master` branch, `git merge feature1`
-* Now, GPU nano/vim, just `Control^X` to exit
+	* Assume, you are in `master` branch, `git merge feature1`
+	* Now, GPU nano/vim, just `Control^X` to exit
 ```javascript
         /--0
        /   |
